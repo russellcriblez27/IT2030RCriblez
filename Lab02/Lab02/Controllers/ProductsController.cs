@@ -23,7 +23,7 @@ namespace Lab02.Controllers
         //GET: /Products/Details/105
         public string Details(string id)
         {
-            string message = "Details displayed for Id=" + id;
+            string message = HTTPUtil.HTMLEncode("Details displayed for Id=" + id);
             return message;
         }
         //
